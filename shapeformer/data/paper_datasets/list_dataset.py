@@ -18,6 +18,9 @@ class ListDataset(Dataset):
         print("list ditem", ditem_list)
 
         self.ditem_names = np.loadtxt(ditem_list, dtype=str)
+
+        print("list ditem_names", ditem_names)
+        
         self.list_dir = os.path.dirname(ditem_list)
 
     def __len__(self):
