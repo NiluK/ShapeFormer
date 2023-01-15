@@ -15,6 +15,8 @@ class ListDataset(Dataset):
         super().__init__()
         self.__dict__.update(locals())
 
+        print(ditem_list)
+
         self.ditem_names = np.loadtxt(ditem_list, dtype=str)
         self.list_dir = os.path.dirname(ditem_list)
 
